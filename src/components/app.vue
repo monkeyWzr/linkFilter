@@ -44,15 +44,15 @@
     <input type="text" v-model="filterText">
     <button type="button" @click="downloadCheckedLinks">下载</button>
     <p>
-      <input type="checkbox" id="toggle_all" @click="toggleAll">
+      <input type="checkbox" id="toggle_all" @click="toggleAll">全选
     </p>
-    <!-- <table>
+    <table>
       <tr v-for="(link, index) in visibleLinks">
         <th><input type="checkbox" v-bind:id="'check' + index"></th>
         <th align=left>{{ link }}</th>
       </tr>
-    </table> -->
-    <mt-checklist title="复选框列表" v-model="visibleLinks" :options="visibleLinks"></mt-checklist>
+    </table>
+    <!-- <mt-checklist title="复选框列表" v-model="visibleLinks" :options="visibleLinks"></mt-checklist> -->
   </div>
 </template>
 <style lang="sass">
